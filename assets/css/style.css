@@ -230,3 +230,16 @@ img {
 .partner .card:hover {
   transform: translateY(-15px);
 }
+
+.footer {
+  padding: 20px;
+}
+
+.footer img {
+  width: 50%;
+}
+
+.footer p {
+  font-weight: 700;
+  font-size: 10px;
+}
