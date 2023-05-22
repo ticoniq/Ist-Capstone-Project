@@ -5,7 +5,6 @@ const closeMenu = document.querySelector('.close');
 openMenu.addEventListener('click', () => {
   mobileMenu.style.display = 'flex';
   document.body.style.overflow = 'hidden';
-  // document.body.style.backdropFilter = 'blur(10px)';
 });
 
 closeMenu.addEventListener('click', () => {
@@ -13,6 +12,7 @@ closeMenu.addEventListener('click', () => {
   document.body.style.overflow = 'auto';
 });
 
+// scroll to display the menubar and added some styling
 (
   window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');

@@ -5,7 +5,7 @@
   --dark-color: #272a31;
   --light-color: #d3d3d3;
   --lighter-color: #f7f7f7;
-  --gray-color: #3d3d3d;
+  --gray-color: #414246;
 }
 
 * {
@@ -16,7 +16,7 @@
 
 body {
   /* font-family: "Lato", sans-serif; */
-  font-family: 'Gothic A1', Arial, Helvetica, sans-serif;
+  font-family: "Gothic A1", Arial, Helvetica, sans-serif;
   color: #333;
   line-height: 1.6;
   background: #fff;
@@ -103,7 +103,7 @@ img {
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
-  height: 100vh;
+  height: 550px;
 }
 
 .showcase .container {
@@ -149,4 +149,81 @@ img {
   font-size: 15px;
   font-weight: 500;
   color: var(--gray-color);
+}
+
+/* program */
+.program {
+  background-color: var(--dark-color);
+  background-image: url("../images/pattern_bg.png");
+  margin: 0;
+  padding: 30px 0;
+}
+
+.program .container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.program .program-card {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  /* gap: 5px; */
+  background: rgba(211, 211, 211, 0.12);
+}
+
+.program .program-card h3 {
+  font-weight: 700;
+  font-size: 15px;
+  width: 190px;
+  align-self: center;
+  margin-left: 5px;
+}
+
+.program .program-card p {
+  font-weight: 500;
+  font-size: 12px;
+  padding: 0;
+}
+
+.program .program-dl {
+  display: none;
+}
+
+.program .mobile-cc {
+  display: block;
+  background: var(--primary-color);
+  text-align: center;
+  margin: auto;
+  margin-top: 35px;
+  padding: 20px;
+  max-width: 80%;
+}
+
+.program .mobile-cc a {
+  color: var(--light-color);
+  text-align: center;
+}
+
+/* partner */
+.partner {
+  padding: 30px 0;
+  background: var(--gray-color);
+  transition: transform 0.2s ease-in;
+
+}
+.partner .flex {
+  padding: 50px 0;
+  flex-wrap: wrap;
+}
+
+.partner .card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.partner .card:hover {
+  transform: translateY(-15px);
 }
