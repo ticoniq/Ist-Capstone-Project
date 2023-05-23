@@ -773,8 +773,8 @@ img {
   #speak {
     display: grid;
   }
-}
 
-.none {
-  display: block;
+  .none {
+    display: block;
+  }
 }
