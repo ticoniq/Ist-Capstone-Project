@@ -43,7 +43,7 @@ const speakersData = [
   },
 ];
 
-const showSpeaker = document.querySelector('#speakers');
+const showSpeak = document.querySelector('#speak');
 let output = ' ';
 speakersData.forEach((speaker) => {
   output += `
@@ -57,4 +57,40 @@ speakersData.forEach((speaker) => {
   </div>
   `;
 });
-showSpeaker.innerHTML = output;
+showSpeak.innerHTML = output;
+
+const showSpeaker = document.querySelector('#speakers');
+const speaker = document.querySelector('#speaki');
+const showMoreButton = document.createElement('button');
+showMoreButton.className = 'show-more';
+showMoreButton.textContent = 'More';
+showMoreButton.addEventListener('click', () => {
+  const moreSpeakers = speakersData.slice(2);
+  showSpeaker.innerHTML += moreSpeakers.map((speaker) => `
+  <div class="speaker-card">
+    <img src="${speaker.image}" alt="">
+    <div class="speaker-card-details">
+      <h3>${speaker.name}</h3>
+      <p class="primary">${speaker.profession}</p>
+      <p>${speaker.studies}</p>
+    </div>
+  </div>
+    `).join('');
+});
+showMoreButton.innerHTML = 'More <i class="fa fa-chevron-down"></i>';
+speaker.appendChild(showMoreButton);
+
+// Display the first two speakers
+const firstTwoSpeakers = speakersData.slice(0, 2);
+firstTwoSpeakers.forEach((speaker) => {
+  showSpeaker.innerHTML += `
+  <div class="speaker-card">
+    <img src="${speaker.image}" alt="">
+    <div class="speaker-card-details">
+      <h3>${speaker.name}</h3>
+      <p class="primary">${speaker.profession}</p>
+      <p>${speaker.studies}</p>
+    </div>
+  </div>
+  `;
+});

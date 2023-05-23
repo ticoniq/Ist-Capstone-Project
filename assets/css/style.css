@@ -282,6 +282,11 @@ img {
   font-weight: 700;
 }
 
+.footer p {
+  font-weight: 700;
+  font-size: 10px;
+}
+
 .pastcc .content p {
   font-weight: 700;
 }
@@ -314,11 +319,6 @@ img {
   width: 190px;
   align-self: center;
   margin-left: 5px;
-}
-
-.footer p {
-  font-weight: 700;
-  font-size: 10px;
 }
 
 .program .program-card p {
@@ -416,6 +416,26 @@ img {
 /* footer */
 .footer {
   padding: 20px;
+}
+
+.show-more {
+  display: inline-block;
+  margin: 30px 0;
+  padding: 10px 10px;
+  cursor: pointer;
+  border: 2px solid var(--light-color);
+  background: var(--lighter-color);
+  color: var(--dark-color);
+  font-weight: 600;
+  width: 100%;
+}
+
+.show-more i {
+  color: var(--primary-color);
+}
+
+#speak {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -548,6 +568,12 @@ img {
     font-size: 15px;
   }
 
+  .creative p {
+    margin: 30px 0;
+    color: var(--gray-color);
+    font-weight: 500;
+  }
+
   .program .program-card p {
     font-weight: 500;
     font-size: 12px;
@@ -581,6 +607,10 @@ img {
 
   .speaker .speaker-card h3 {
     font-size: 20px;
+  }
+
+  .pastcc .content p {
+    font-weight: 700;
   }
 
   .speaker .speaker-card p:nth-child(2) {
@@ -653,19 +683,16 @@ img {
     font-weight: 700;
   }
 
-  .pastcc .content p {
-    font-weight: 700;
-  }
-
   /* footer */
   .abt-footer {
-    padding: 20px;
+    padding: 50px 20px;
     background: var(--gray-color);
     color: var(--lighter-color);
   }
 
   .abt-footer .grid {
     grid-template-columns: 1fr 2fr;
+    justify-content: space-around;
     gap: 40px;
   }
 
@@ -724,14 +751,22 @@ img {
     padding: 0 70px;
   }
 
-  .creative p {
-    margin: 30px 0;
-    color: var(--gray-color);
-    font-weight: 500;
+  .creative .img {
+    margin: 0 auto;
+    width: 400px;
+    padding: 50px 60px;
+    border: 3px solid var(--lighter-color);
   }
 
-  .creative .img {
-    padding: 20px 60px;
-    border: 3px solid var(--lighter-color);
+  .show-more {
+    display: none;
+  }
+
+  #speakers {
+    display: none;
+  }
+
+  #speak {
+    display: grid;
   }
 }
