@@ -125,6 +125,7 @@ img {
 }
 
 .showcase .title {
+  text-transform: uppercase;
   color: transparent;
   font-size: 1.7rem;
   font-weight: 900;
